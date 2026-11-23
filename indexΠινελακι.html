@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#faf8f2"><title>Το πινελάκι της Αντωνίας</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f9f7f1;color:#242821;font:16px/1.55 "Segoe UI",Arial,sans-serif;--blue:#263e98;--border:#cbcabe;--paper:#fbfaf5}button,select{font:inherit;color:inherit}button,a,select{touch-action:manipulation}button{cursor:pointer;background:none;border:0}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #ca6819;outline-offset:4px}a{color:inherit}.wrap{width:min(1216px,calc(100% - 80px));margin:auto}header{border-bottom:1px solid var(--border)}.top{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font: bold 22px Georgia,serif;text-decoration:none}.mark{display:grid;place-items:center;background:var(--blue);color:white;width:43px;height:43px;border-radius:12px 10px 14px 9px;transform:rotate(-5deg)}.ico{width:1.2em;height:1.2em;vertical-align:-.22em;flex:none}nav{display:flex;gap:6px}nav a,.sub,.primary,.pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:8px;font-weight:600;text-decoration:none}nav a{font-size:15px;padding:10px 14px}nav a[aria-current=page]{background:#e6e9f4;color:var(--blue)}main{padding:30px 0 40px}.hero{position:relative;isolation:isolate;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;overflow:hidden;background:#e5e9dd;border:1px solid #c7cdbf;border-radius:14px;min-height:325px;padding:34px clamp(24px,4vw,62px);gap:24px}.hero:before{content:'';position:absolute;inset:0;pointer-events:none;z-index:-1;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='130' height='130'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath d='M0 0h130v130H0z' opacity='.12' filter='url(%23n)'/%3E%3C/svg%3E")}.eyebrow,.meta{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600}.eyebrow{color:#475637}.hero h1{font:normal clamp(39px,4.4vw,67px)/1.08 Georgia,serif;letter-spacing:-.045em;margin:14px 0}.hero p{max-width:450px;font-size:17px;margin:0 0 20px}.primary{background:var(--blue);color:white;padding:11px 19px}.primary:hover{background:#1d3078}.sub,.pill{border:1px solid var(--border);background:var(--paper);padding:8px 13px}.heroArt{position:relative;transform:rotate(3deg);justify-self:center;width:min(100%,350px);box-shadow:1px 6px 13px #26352328;background:#fffdf4;padding:12px 12px 9px}.heroArt:before{content:'';position:absolute;width:92px;height:25px;background:#d8bc7caa;top:-10px;left:35%;transform:rotate(-7deg);z-index:2;clip-path:polygon(1% 3%,99% 0,96% 24%,100% 48%,97% 75%,100% 99%,0 100%,3% 70%,0 44%,4% 24%)}.heroArt svg:not(.ico){width:100%;height:198px;display:block}.caption{font:italic 15px Georgia,serif;color:#585547;text-align:center;margin:6px 0 0}.sectionHead{margin:34px 0 15px;display:flex;gap:15px;align-items:baseline;justify-content:space-between}h2,.pageTitle{font:normal clamp(30px,3.1vw,46px)/1.15 Georgia,serif;letter-spacing:-.035em;margin:0}.sectionHead span,.muted{color:#62665d;font-size:14px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.pill{font-size:14px;border-radius:30px;font-weight:500}.pill[aria-pressed=true]{background:#2e392f;color:white;border-color:#2e392f}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{display:block;text-align:left;padding:0;overflow:hidden;border:1px solid var(--border);border-radius:12px;background:#fffef9;transition:transform .18s;width:100%}.card:hover{transform:translateY(-3px);border-color:#747d70}.cardArt{display:grid;place-items:center;overflow:hidden;height:clamp(160px,16vw,205px);background:var(--tint)}.cardArt svg{width:100%;height:100%;display:block}.cardBody{padding:15px 18px 17px}.card h3{font:normal 25px/1.2 Georgia,serif;margin:7px 0}.meta{font-size:13px;color:#54594e}.meta.end{justify-content:space-between}.dots{display:inline-flex;gap:4px;align-items:center}.dot{width:11px;height:11px;border-radius:50%;display:inline-block}.tag{font-size:13px;color:#59604f}.lessonTop{display:flex;justify-content:space-between;margin-bottom:20px}.reader{display:grid;grid-template-columns:1.2fr 1fr;gap:26px;margin:22px 0}.plate,.panel,.challengeBox{border:1px solid var(--border);border-radius:13px;background:var(--paper);padding:22px}.plate{align-self:start}.imageArea{position:relative;background:var(--tint);border-radius:8px;overflow:hidden}.imageArea>svg{display:block;width:100%;height:auto}.gridOn:after{position:absolute;inset:0;content:'';background-image:linear-gradient(to right,#36427255 1px,transparent 1px),linear-gradient(to bottom,#36427255 1px,transparent 1px);background-size:25% 25%;pointer-events:none}.tools,.controls,.stages{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:16px}.stages button{border:1px solid var(--border);border-radius:50%;width:38px;height:38px}.stages [aria-current=step]{background:var(--blue);color:white}.panel h2{font-size:32px;margin:14px 0}.check{border-left:3px solid #9da774;background:#edf1e8;padding:12px 15px}.challengeBox{margin-top:18px;background:#eee9df}.challengeBox h3{margin:0}.progress{height:6px;background:#d6d9ce;border-radius:6px;overflow:hidden}.progress i{height:100%;background:var(--blue);display:block}.swatches{display:flex;height:64px;margin:12px 0}.swatches span{flex:1}.exc{margin:18px 0}.footer{padding:20px 0;border-top:1px solid var(--border);font-size:14px;color:#59604f}.skip{position:absolute;left:-100vw}.skip:focus{left:0;z-index:10;background:white}button:disabled{opacity:.45;cursor:default}button[aria-pressed=true].sub{background:#dee5f7}#notice{color:#802f15}.printSheet{display:none}@media(max-width:800px){.wrap{width:calc(100% - 32px)}.top{flex-wrap:wrap;gap:5px;padding:12px 0}.brand{font-size:19px}nav a{padding:8px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding:26px;gap:18px}.reader{grid-template-columns:1fr 1fr;gap:12px}.plate,.panel{padding:15px}}@media(max-width:600px){.top{justify-content:center}nav{width:100%;justify-content:center}nav a{font-size:14px}.hero{grid-template-columns:1fr;padding:25px;gap:28px}.heroArt{width:85%;margin-bottom:6px}.heroArt svg:not(.ico){height:145px}.hero h1{font-size:43px}.cards,.reader{grid-template-columns:1fr}.cardArt{height:195px}.sectionHead{align-items:center}.sectionHead span{white-space:nowrap}main{padding-top:15px}.tools .sub{font-size:14px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}@media print{body>*{display:none!important}body>.printSheet{display:block!important}.printSheet svg{width:220px;height:140px;float:left;margin-right:18px}.printSheet section{break-inside:avoid;min-height:155px;clear:both}.printSheet h1{font-size:24px}.printSheet p{font-size:13px}.printSheet h3{margin-bottom:3px}}
+</style></head><body><a class="skip" href="#content">Στο περιεχόμενο</a><header><div class="wrap top"><a href="#home" class="brand"><span class="mark" id="mark"></span>Το πινελάκι της Αντωνίας</a><nav aria-label="Κύρια πλοήγηση"></nav></div></header><main id="content" class="wrap" tabindex="-1"></main><div id="notice" role="status" class="wrap"></div><footer class="footer"><div class="wrap">Το πινελάκι της Αντωνίας · Εργαστήριο ζωγραφικής</div></footer><article class="printSheet"></article><script>
+function art(id, stage = 3) {
+  const themes = {
+    pear:['#e7dfc8','#514b34','Αχλάδι σε πλάγιο φως'],
+    eye:['#e9d6c3','#493a32','Μελέτη ανθρώπινου ματιού'],
+    mountains:['#d7dfd6','#374d4b','Ορεινό τοπίο με λίμνη'],
+    street:['#ecdcc8','#654f40','Δρόμος με μυτερή αψίδα'],
+    feather:['#dfded7','#394347','Φτερό σε λοξό άξονα'],
+    jug:['#e7d1bf','#5a4239','Κεραμική κανάτα']
+  };
+  const [paper, ink, label] = themes[id] || themes.pear;
+  art.sequence = (art.sequence || 0) + 1;
+  const key = 'sk' + art.sequence;
+  const ref = name => 'url(#' + key + name + ')';
+  let seed=31821;
+  const rand=()=>((seed=(1664525*seed+1013904223)>>>0)/4294967296);
+  const n = x => Math.round(x*10)/10;
+  const p = (d, w=1.4, opacity=.94, fill='none', extra='') => '<path d="'+d+'" stroke="'+ink+'" stroke-width="'+w+'" opacity="'+opacity+'" fill="'+fill+'" '+extra+'/>';
+  const e = (x,y,rx,ry,w=1,opacity=.8,fill='none') => '<ellipse cx="'+x+'" cy="'+y+'" rx="'+rx+'" ry="'+ry+'" fill="'+fill+'" stroke="'+ink+'" stroke-width="'+w+'" opacity="'+opacity+'"/>';
+  const repeat=(count,fn)=>Array.from({length:count},(_,i)=>fn(i)).join('');
+  let defs='', out='';
+  const clip=(name,d,s)=>{defs+='<clipPath id="'+key+name+'"><path d="'+d+'"/></clipPath>'; return '<g clip-path="'+ref(name)+'">'+s+'</g>';};
+  const shade=(name,c1,c2,c3)=>{defs+='<linearGradient id="'+key+name+'" x1="0%" y1="25%" x2="95%" y2="75%"><stop stop-color="'+c1+'"/><stop offset=".45" stop-color="'+c2+'"/><stop offset="1" stop-color="'+c3+'"/></linearGradient>'; return ref(name);};
+  const guide=d=>p(d,1,stage===0?.52:.15,'none','stroke-dasharray="5 4"');
+  const hatch=(count,x,y,dx,dy,tilt,len,weight=1)=>repeat(count,i=>{let a=x+dx*i+rand()*3,b=y+dy*i+rand()*3;return p('M'+n(a)+' '+n(b)+'q'+n(tilt*.65)+' '+n(-len*.42)+' '+n(tilt)+' '+n(-len-rand()*4),weight*(.65+rand()*.65),.22+rand()*.3);});
+  if(id==='pear'){
+    const body='M233 57C216 54 211 66 207 83C202 106 191 116 176 130C155 151 148 173 155 194C162 215 182 223 207 226C230 230 253 221 267 202C285 179 273 151 259 134C242 113 245 94 246 78C247 67 244 59 233 57Z';
+    const leaf='M234 47C254 19 282 23 303 18C288 34 280 56 257 58C247 58 239 53 234 47Z';
+    if(stage<2)out+=guide('M198 231L239 41M140 227H292')+e(214,176,62,51,1,stage===0?.55:.16)+e(227,96,22,41,1,stage===0?.55:.16);
+    if(stage>=1) {
+      out+=p(body,2.1,1,stage>=2?shade('pear','#eee8bd','#c2bc83','#757658'):'none');
+      out+=p('M225 62C226 51 231 37 227 29L233 26C238 39 232 52 232 62Z',1.3,1,stage>=2?'#817456':'none')+p(leaf,1.2,1,stage>=2?'#858e69':'none');
+    }
+    if(stage>=2){
+      out=repeat(56,i=>{let x=127+rand()*151,y=226+rand()*7;return p('M'+n(x)+' '+n(y)+'q22 -2 51 -4',.7,.14);})+out;
+      out+=clip('pearbody',body,hatch(107,208,284,.78,-1.8,24,75)+hatch(48,138,241,2.75,.01,29,33,.75));
+      out+=p('M235 47Q262 44 294 23',.9,.9);
+    }
+    if(stage>=3){
+      out+=clip('pearspecks',body,repeat(1600,()=>{let x=150+rand()*130,y=53+rand()*175;return e(n(x),n(y),n(.2+rand()*.62),n(.2+rand()*.62),0,.15+rand()*.25,ink);}));
+      out+=repeat(13,i=>{let x=241+i*3.55,y=46-i*.95;return p('M'+n(x)+' '+n(y)+'q3 -6 4 -12m-4 12q7 3 12 2',.65,.62);});
+      out+=p('M158 194Q172 221 202 222M220 64Q228 70 239 65',1.3,.7);
+    }
+  } else if(id==='eye'){
+    const opening='M68 143C102 130 130 93 182 88C231 83 277 102 322 129C298 133 275 157 239 166C183 179 128 166 94 149C83 144 76 144 68 143Z';
+    const brow='M74 91C115 51 145 39 188 40C225 38 279 53 312 77C272 63 229 56 190 58C143 58 112 79 74 91Z';
+    if(stage<2)out+=guide('M48 138L343 126M193 64V184')+e(195,130,113,45,1,stage===0?.53:.14)+e(197,127,36,38,1,stage===0?.68:.14);
+    if(stage>=1){
+      out+=p(opening,2.7,1,stage>=2?'#f1e4d7':'none');
+      const iris=e(198,125,38,40,2,.98,stage>=2?shade('iris','#978877','#857c68','#575343'):'none')+e(198,125,16,17,2,1,stage>=2?'#3f3a31':'none');
+      out+=clip('eyeopen',opening,iris+(stage>=3?repeat(136,i=>{let a=i*.0462,r=18+rand()*12;return p('M'+n(198+Math.cos(a)*r)+' '+n(125+Math.sin(a)*r)+'Q'+n(198+Math.cos(a+.08)*(r+7))+' '+n(125+Math.sin(a+.08)*(r+7))+' '+n(198+Math.cos(a+.03)*38)+' '+n(125+Math.sin(a+.03)*39),.5+rand()*.8,.39+rand()*.42);}):'') );
+      out+=p('M85 118C130 72 164 65 193 67C242 66 283 87 307 106M98 155C149 178 186 187 231 177Q268 168 293 149',1.2,.67);
+    }
+    if(stage>=2)out+=p(brow,0, .55,'#817264')+p('M69 143C105 128 129 92 182 88C231 82 281 105 322 129C280 106 236 91 188 94C137 96 107 136 79 144Z',.7,.96,ink)+e(189,112,7,6,0,1,'#faf3e5')+e(204,131,2.3,2.3,0,1,'#faf3e5');
+    if(stage>=3){
+      out+=clip('brow',brow,repeat(180,i=>{let x=68+i*1.44,y=88-31*Math.sin(i/180*Math.PI)+rand()*14;return p('M'+n(x)+' '+n(y)+'q8 -12 22 -20',.7+rand(),.75);}));
+      out+=repeat(37,i=>{let t=i/36,x=100+t*218,y=125-38*Math.sin(Math.PI*t)+3*t;return p('M'+n(x)+' '+n(y)+'q'+n(1+t*5)+' '+n(-3-rand()*5)+' '+n(-5+t*16)+' '+n(-8-rand()*9),.7+rand()*.75,.7);});
+      out+=repeat(31,i=>{let x=119+i*6,y=159+12*Math.sin(i/30*Math.PI)-i*.7;return p('M'+n(x)+' '+n(y)+'q2 4 6 7',.8,.5);});
+      out+=p('M73 141Q89 138 94 147M107 151Q134 164 152 164',1,.55);
+    }
+  } else if(id==='mountains'){
+    const peaks='M-8 160L32 124L48 128L84 97L99 104L148 52L160 66L173 61L207 104L238 76L251 83L274 60L324 111L341 104L408 151V180H-8Z';
+    const front='M-5 144Q22 136 54 149T118 154Q145 150 164 157Q194 167 218 163Q242 162 266 151Q291 145 310 145Q343 145 368 129L406 117V181H-5Z';
+    if(stage<2)out+=guide('M0 165H400M147 43V173M274 49V171')+p('M0 156L148 52L211 118L274 60L400 150M0 171H400',1,stage===0?.8:.24);
+    if(stage>=1)out+=p(peaks,1.45,1,stage>=2?'#bec6b8':'none')+p('M147 53L132 96L122 103L116 124L88 149M173 63L163 86L177 90L179 104L194 119M275 61L269 86L256 100L253 112L227 140',.98,.8);
+    if(stage>=2){
+      out+=p('M148 53L160 67L173 62L208 105L189 128L170 116L163 95L150 85L139 97Z M275 61L324 111L337 111L340 133L311 143L294 117L279 99L269 87Z',.5,.7,'#7f9087');
+      out+=clip('ridge',peaks,hatch(135,5,181,2.9,-.11,19,34,.8));
+      out+=p(front,1,.94,'#788a79')+p('M0 174Q120 169 192 173T400 166V250H0Z',0,.52,'#b3c6bf');
+    }
+    if(stage>=3){
+      out+=repeat(170,i=>{let x=i*2.4,y=161+6*Math.sin(x/75)-Math.max(0,x-288)*.24,h=3+rand()*10+Math.max(0,x-318)*.16;return p('M'+n(x)+' '+n(y-h)+'l'+n(-h*.26)+' '+n(h*.77)+'l'+n(h*.13)+' -1l'+n(-h*.22)+' '+n(h*.34)+'h'+n(h*.75)+'l'+n(-h*.24)+' '+n(-h*.38)+'l2 1Z',0,.55+rand()*.35,ink);});
+      out+=repeat(125,()=>{let x=rand()*400,y=174+rand()*71,l=2+rand()*36;return p('M'+n(x)+' '+n(y)+'q'+n(l*.45)+' -1 '+n(l)+' -.4',.6,.15+rand()*.4);});
+      out+=repeat(95,()=>{let x=70+rand()*126,y=132-rand()*54;return clip('rock'+n(rand()*1e7),peaks,p('M'+n(x)+' '+n(y)+'l-6 8l-4 1l-7 10',.65,.45));});
+    }
+  } else if(id==='street'){
+    const arch='M65 217V111Q69 76 112 48Q157 74 161 111V217H149V113Q146 87 112 62Q80 86 78 113V217Z';
+    if(stage<2)out+=guide('M0 136H400M4 229L233 136L400 230M0 19L233 136L400 36M233 109V155')+p('M0 249L233 136L400 245M0 8L233 136L400 50',.8,.6);
+    if(stage>=1)out+=p('M0 5L179 84V158L0 230Z',1.6,1,stage>=2?'#cdb798':'none')+p('M400 33L274 99V159L400 235Z',1.6,1,stage>=2?'#c5a98d':'none')+p('M179 84L201 97V150L179 158ZM274 99L251 111V147L274 159Z',1,.82,stage>=2?'#d6c5ac':'none')+p('M0 231L232 136L400 236',1,.75);
+    if(stage>=1)out+=p('M75 201V111Q78 80 112 58Q148 83 151 113V169Z',1.4,.95,stage>=2?'#6d6053':'none')+p(arch,1.6,1,stage>=2?'#e3ceb0':'none');
+    if(stage>=2){
+      out+=p('M0 19L178 90M1 27L178 94M0 198L69 176M162 148L177 144M275 106L400 49M276 110L400 59',1.2,.8);
+      out+=repeat(5,i=>{let x=284+i*23,y=111-i*8,w=4+i*1.2,h=12+i*3;return p('M'+x+' '+y+'l'+n(w)+' '+n(-w*.4)+'v'+h+'l'+n(-w)+' '+n(w*.2)+'Z',1,.85,'#746354');});
+      out+=p('M20 80L43 87V131L20 131Z M185 107L193 110V126L185 126Z',1,.85,'#786656');
+    }
+    if(stage>=3){
+      out+=clip('archstone',arch,repeat(11,i=>{let a=Math.PI+(i/10)*Math.PI;return p('M'+n(112+Math.cos(a)*28)+' '+n(116+Math.sin(a)*49)+'L'+n(112+Math.cos(a)*60)+' '+n(116+Math.sin(a)*83),1,.8);})+repeat(8,i=>p('M60 '+(117+i*16)+'l26 3m57 -4l20 4',1,.8)));
+      out+=repeat(9,i=>{let y=23+i*21;return p('M0 '+y+'L64 '+n(y*.71+136*.29)+'M166 '+n(y*.28+136*.72)+'l10 '+n((136-y)*.04),.65,.45);});
+      out+=repeat(9,i=>{let y=144+Math.pow(i,1.72)*2.7;return p('M'+n(Math.max(0,233-(y-136)*2.45))+' '+n(y)+'q75 3 '+n((y-136)*4.15)+' 0',.8,.46);});
+      out+=repeat(62,()=>{let x=rand()*400,y=201+rand()*47;return p('M'+n(x)+' '+n(y)+'l6 -.5',.65,.36);});
+      out+=p('M251 111V95L260 88L269 92V101M211 148v-23l15-6 12 3v17',1,.66);
+    }
+  } else if(id==='feather'){
+    const plume='M117 197C90 158 119 111 164 77C189 61 218 47 249 39L287 31C279 45 280 69 265 91C248 117 229 131 207 148L186 156L194 156C163 179 141 189 117 197Z';
+    const spine='M94 222Q150 166 198 120Q249 69 287 31';
+    if(stage<2)out+=guide('M92 225L291 27')+p('M116 197Q90 86 287 31Q254 146 116 197Z',1,stage===0?.75:.17);
+    if(stage>=1)out+=p(plume,1.7,1,stage>=2?shade('plume','#ebe4cf','#a4aaa0','#657471'):'none')+p(spine,2.2,.95);
+    if(stage>=2){
+      const barbs=repeat(stage===3?117:31,i=>{let t=i/(stage===3?118:32),x=116+170*t,y=198-167*t-4*Math.sin(Math.PI*t),s=Math.sin(Math.PI*t)*35+8,r=rand()*7;return p('M'+n(x)+' '+n(y)+'q'+n(-s*.42)+' '+n(-s*.4)+' '+n(-s+r)+' '+n(-s*2.3)+'M'+n(x)+' '+n(y)+'q'+n(s*.75)+' '+n(-s*.08)+' '+n(s*2.3)+' '+n(-s*.82-r),stage===3?.55+rand()*.82:1,.38+rand()*.42);});
+      out+=clip('featherbarbs',plume,barbs)+p(spine,2.2,.85,'none','style="stroke:#f3efdc"');
+    }
+    if(stage>=3)out+=p('M94 222L92 225Q89 225 91 221L116 192',1.2,.82)+clip('split',plume,p('M115 135l29 26l-31 -20ZM140 98l24 40l-19 -43ZM234 129l-32 3l31 2ZM254 100l-30 9l26 -4Z',0,1,paper));
+  } else {
+    const vessel='M151 48Q180 40 209 47L232 45L220 58Q208 67 214 91C219 109 249 122 252 155C255 183 238 203 224 216Q219 224 219 229Q185 239 151 229Q152 220 140 211C117 189 111 163 119 143C128 121 149 110 154 93Q162 70 151 48Z';
+    const handle='M214 85C259 54 290 77 279 123Q274 151 246 172L242 159Q261 143 266 118C272 90 259 79 218 98Z';
+    if(stage<2)out+=guide('M185 32V238M107 157H283')+e(185,163,67,64,1,stage===0?.6:.17)+e(185,51,34,7,1,stage===0?.62:.17)+e(185,229,34,6,1,stage===0?.65:.17);
+    if(stage>=1)out+=p(handle,1.9,1,stage>=2?'#ae7d64':'none')+p(vessel,2,1,stage>=2?shade('ceramic','#d0a48a','#d9ac89','#9a6756'):'none')+p('M152 49Q175 56 195 52Q213 47 230 46',1.3,.88);
+    if(stage>=2)out+=clip('vessel',vessel,hatch(95,190,284,1,-1.8,32,77)+hatch(42,113,244,2.65,-.1,27,28,.8))+p('M151 225Q182 235 220 225M154 57Q181 63 213 55',1.4,.84);
+    if(stage>=3){
+      out+=clip('ceramicmarks',vessel,repeat(105,i=>{let y=54+i*1.65,x=113+rand()*113;return p('M'+n(x)+' '+n(y)+'q13 5 26 4',.65,.15+rand()*.2);}));
+      out+=p('M163 84Q166 103 149 117M129 148Q122 166 133 183',2,.58,'none','style="stroke:#f8d8b6"')+p('M216 90Q242 69 263 77M249 163Q267 146 272 127',1,.65);
+      out=repeat(47,()=>{let x=119+rand()*154,y=232+rand()*5;return p('M'+n(x)+' '+n(y)+'l29 -2',.6,.27);})+out;
+    }
+  }
+  const grain=repeat(520,()=>{let x=n(rand()*400),y=n(rand()*250);return '<path d="M'+x+' '+y+'l'+n(rand()*2+0.3)+' -.25" stroke="'+ink+'" opacity=".13" stroke-width=".6"/>';});
+  return '<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="'+label+' · στάδιο '+(stage+1)+'" viewBox="0 0 400 250" preserveAspectRatio="xMidYMid meet"><defs>'+defs+'</defs><rect width="400" height="250" fill="'+paper+'"/>'+grain+'<g stroke-linejoin="round" stroke-linecap="round">'+out+'</g></svg>';
+}
+const lessons = [
+  {
+    id: "pear", title: "Το αχλάδι στο φως", category: "Νεκρή φύση", minutes: 20,
+    skill: "Δώσε όγκο με το φως και τη σκιά.",
+    materials: "Χαρτί, μολύβι και γόμα. Αν έχεις ένα αχλάδι, βάλε το κοντά στο παράθυρο.",
+    challenge: "Γύρισε το αχλάδι και κάνε ένα δεύτερο, μικρό σκίτσο. Τι άλλαξε στο περίγραμμα; Πού βρίσκεται τώρα η φωτεινή πλευρά;",
+    steps: [
+      { title: "Βρες τα μεγάλα σχήματα", text: "Άφησε λίγο χώρο γύρω από το φρούτο. Με απαλό χέρι βάλε ένα φαρδύ οβάλ για την κοιλιά και ένα στενότερο σχήμα πιο ψηλά για τον λαιμό.", check: "Μετράς με το μάτι ποιο μέρος είναι πιο φαρδύ;" },
+      { title: "Ένωσε τις καμπύλες", text: "Ακολούθησε με μία γραμμή την εξωτερική άκρη των δύο σχημάτων. Στένεψε απαλά τον λαιμό, πρόσθεσε το κοτσάνι και σβήσε τις γραμμές που περισσεύουν στο εσωτερικό.", check: "Αν κρύψεις το κοτσάνι με το δάχτυλό σου, το σχήμα θυμίζει ακόμα αχλάδι;" },
+      { title: "Χώρισε φως και σκιά", text: "Δες από ποια μεριά έρχεται το φως στο παράδειγμα. Πέρασε το πλάι του μολυβιού απαλά στην αντίθετη μεριά. Άφησε ένα κομμάτι του χαρτιού καθαρό εκεί που πέφτει το περισσότερο φως.", check: "Μισόκλεισε τα μάτια. Ξεχωρίζεις μια μεγάλη φωτεινή και μια μεγάλη σκούρα περιοχή;" },
+      { title: "Στήριξε το φρούτο και δώσε υφή", text: "Σκούρυνε το μικρό σημείο όπου το αχλάδι αγγίζει το τραπέζι. Άφησε τη σκιά να σβήσει απαλά όσο απομακρύνεται. Με τη μύτη του μολυβιού βάλε λίγες κουκκίδες στη φλούδα και λεπτές φλέβες στο φύλλο.", check: "Δείξε με το δάχτυλο το πιο φωτεινό και το πιο σκοτεινό σημείο. Μοιάζει τώρα το αχλάδι να ακουμπά κάπου;" }
+    ]
+  },
+  {
+    id: "eye", title: "Η μελέτη ενός ματιού", category: "Πορτρέτο", minutes: 25,
+    skill: "Παρατήρησε τις αναλογίες και τη γυαλάδα του ματιού.",
+    materials: "Χαρτί, μολύβι και γόμα. Ένας μικρός καθρέφτης θα σε βοηθήσει να παρατηρήσεις το δικό σου μάτι.",
+    challenge: "Κοίτα στον καθρέφτη λίγο προς το πλάι. Σχεδίασε ξανά μόνο τα βλέφαρα και την ίριδα. Σύγκρινε το λευκό που φαίνεται δεξιά και αριστερά.",
+    steps: [
+      { title: "Σημάδεψε τις γωνίες", text: "Βάλε δύο μικρά σημαδάκια για τις γωνίες του ματιού. Ανάμεσά τους χάραξε πολύ απαλά το τόξο του πάνω βλεφάρου και τη ρηχή καμπύλη του κάτω.", check: "Βρίσκονται οι δύο γωνίες στο ίδιο ακριβώς ύψος στο παράδειγμα;" },
+      { title: "Κρύψε μέρος της ίριδας", text: "Η ίριδα είναι ο χρωματιστός δίσκος του ματιού. Βάλε την ανάμεσα στα βλέφαρα, με ένα κομμάτι της κρυμμένο κάτω από το πάνω βλέφαρο. Στο κέντρο βάλε την κόρη.", check: "Ακολούθησε το επάνω βλέφαρο. Περνά μπροστά από την ίριδα;" },
+      { title: "Φύλαξε τη λάμψη", text: "Κράτησε μια μικρή λευκή κηλίδα εκεί που καθρεφτίζεται το φως. Σκούρυνε την κόρη γύρω της. Δούλεψε την ίριδα με μικρές γραμμές που ανοίγουν από το κέντρο προς την περιφέρεια.", check: "Η μικρή λευκή κηλίδα ξεχωρίζει όταν κρατάς το χαρτί σε απόσταση;" },
+      { title: "Δώσε βάθος στο βλέμμα", text: "Πέρασε λίγη σκιά κάτω από το πάνω βλέφαρο. Πρόσθεσε λίγες βλεφαρίδες που στρίβουν προς τα έξω, σε μικρές ομάδες. Κοίτα πού αλλάζει η κατεύθυνσή τους.", check: "Πού είναι πιο βαριά η σκιά γύρω από το μάτι; Δείξε το σημείο στο δικό σου σχέδιο." }
+    ]
+  },
+  {
+    id: "mountains", title: "Βουνά μέσα στην αχλή", category: "Τοπίο", minutes: 25,
+    skill: "Δείξε την απόσταση με διαδοχικούς τόνους.",
+    materials: "Χαρτί, μολύβι και γόμα. Αν θέλεις χρώμα, αρκεί μια μπλε ή γκρι ξυλομπογιά.",
+    challenge: "Κράτησε τις ίδιες τρεις βουνογραμμές και δοκίμασε ένα δεύτερο τοπίο με περισσότερη ομίχλη. Πόσο λίγο χρειάζεται να φαίνεται το πιο μακρινό βουνό;",
+    steps: [
+      { title: "Διάλεξε τον ορίζοντα", text: "Χάραξε μια πολύ απαλή οριζόντια γραμμή για οδηγό. Κοίτα πού ανεβαίνει και πού χαμηλώνει η πιο μακρινή κορυφογραμμή. Σχεδίασέ την με ελαφριά πίεση.", check: "Άφησες χώρο και για τον ουρανό και για τις πλαγιές που θα μπουν μπροστά;" },
+      { title: "Βάλε τη μία πλαγιά μπροστά στην άλλη", text: "Πρόσθεσε μια δεύτερη βουνογραμμή και ύστερα μια τρίτη πιο κοντά σου. Όπου μια κοντινή πλαγιά σκεπάζει μια μακρινή, σταμάτησε τη μακρινή γραμμή.", check: "Διάλεξε δύο πλαγιές που συναντιούνται. Μπορείς να δείξεις ποια κρύβει την άλλη;" },
+      { title: "Δώσε έναν τόνο σε κάθε απόσταση", text: "Άφησε την πιο μακρινή πλαγιά πολύ αχνή. Σκίασε τη μεσαία λίγο περισσότερο και δώσε την πιο δυνατή σκιά στην κοντινή. Δοκίμασε την πίεση πρώτα στην άκρη του χαρτιού.", check: "Αν μισοκλείσεις τα μάτια, μπορείς ακόμη να μετρήσεις τρία διαφορετικά βάθη;" },
+      { title: "Ζωντάνεψε το κοντινό τοπίο", text: "Βάλε λίγες κοφτές γραμμές στους κοντινούς βράχους και στα δέντρα. Στο νερό τράβηξε μικρές οριζόντιες γραμμές για τους κυματισμούς. Άφησε τις μακρινές κορυφές απαλές.", check: "Κράτησε το χαρτί μακριά. Ποια πλαγιά μοιάζει αρκετά κοντά για να την αγγίξεις;" }
+    ]
+  },
+  {
+    id: "street", title: "Το στενό με την καμάρα", category: "Προοπτική", minutes: 30,
+    skill: "Οδήγησε το βλέμμα βαθιά μέσα σε έναν δρόμο.",
+    materials: "Χαρτί, μολύβι, γόμα και χάρακας ή η ίσια άκρη ενός τετραδίου.",
+    challenge: "Σχεδίασε ένα δεύτερο στενό με το σημείο φυγής πιο αριστερά. Πριν προσθέσεις παράθυρα, δες ποια πλευρά του δρόμου καταλαμβάνει τώρα περισσότερο χαρτί.",
+    steps: [
+      { title: "Διάλεξε το σημείο φυγής", text: "Τράβηξε αχνά μια οριζόντια γραμμή στο ύψος των ματιών σου. Βάλε επάνω της μια τελεία. Από δύο σημεία χαμηλά στο χαρτί, χάραξε τις άκρες του δρόμου προς την τελεία.", check: "Αν συνεχίσεις και τις δύο άκρες του δρόμου, συναντιούνται στην τελεία;" },
+      { title: "Σήκωσε τους τοίχους", text: "Χάραξε κατακόρυφες ακμές για τις γωνίες των κτιρίων. Οι οριζόντιες ακμές που φεύγουν στο βάθος κατευθύνονται προς την τελεία. Για το άνοιγμα της καμάρας ένωσε δύο καμπύλες ψηλά σε μύτη.", check: "Βάλε τον χάρακα σε μια ακμή που φεύγει μακριά. Προς τα πού σε οδηγεί;" },
+      { title: "Χτίσε την καμάρα", text: "Ακολούθησε ξανά το μυτερό τόξο λίγο πιο μέσα για να δείξεις το πάχος της πέτρας. Σκίασε την εσωτερική πλευρά και διάλεξε ποιος τοίχος του στενού δέχεται περισσότερο φως.", check: "Είναι οι δύο βάσεις της καμάρας αρκετά μακριά μεταξύ τους για να περνά ο δρόμος;" },
+      { title: "Δώσε κλίμακα στον δρόμο", text: "Πρόσθεσε τις γραμμές του πλακόστρωτου. Άφησε μεγάλες πλάκες κοντά σου και πιο μικρές όσο πλησιάζεις την τελεία. Χώρισε το στεφάνι της καμάρας σε λίγες πέτρες και σβήσε τους οδηγούς.", check: "Κάλυψε την τελεία με το δάχτυλο. Οι ακμές του δρόμου οδηγούν ακόμη το βλέμμα σου βαθιά;" }
+    ]
+  },
+  {
+    id: "feather", title: "Η υφή ενός φτερού", category: "Φυσική παρατήρηση", minutes: 20,
+    skill: "Χρησιμοποίησε την κατεύθυνση της γραμμής για να δείξεις υφή.",
+    materials: "Χαρτί, ξυσμένο μολύβι και γόμα.",
+    challenge: "Σχεδίασε ένα δεύτερο φτερό σαν να το έχει λυγίσει ένα αεράκι. Ξεκίνα αλλάζοντας μόνο την καμπύλη του κεντρικού άξονα.",
+    steps: [
+      { title: "Ακολούθησε τον άξονα", text: "Κάνε μια μακριά, λυγισμένη γραμμή με μία ήρεμη κίνηση. Αυτή είναι η ράχη του φτερού. Άφησε λίγο ελεύθερο χώρο στο κάτω άκρο για το γυμνό κοτσάνι.", check: "Αν περάσεις το δάχτυλο πάνω από τη γραμμή, νιώθεις την κατεύθυνση της κίνησης;" },
+      { title: "Βρες τη σιλουέτα", text: "Σχεδίασε τις δύο πλευρές γύρω από τη ράχη. Παρατήρησε ποια είναι πιο στενή. Άφησέ τες να ενωθούν σε μία λεπτή άκρη ψηλά.", check: "Σε ποιο ύψος είναι πιο φαρδύ το φτερό σου; Βρες το ίδιο ύψος στο παράδειγμα." },
+      { title: "Χώρισε τις ίνες σε ομάδες", text: "Ξεκίνα κοντά στη ράχη και τράβα λοξές γραμμές προς την άκρη. Ακολούθησε την κλίση του φτερού. Άνοιξε λίγες μικρές εγκοπές εκεί που χωρίζονται οι ομάδες των ινών.", check: "Οι γραμμές ακολουθούν τη στροφή της ράχης καθώς ανεβαίνουν;" },
+      { title: "Εναλλάσσε έντονες και αχνές γραμμές", text: "Πύκνωσε τις γραμμές σε λίγες σκούρες ομάδες και άφησε χαρτί να φαίνεται στις φωτεινές. Προς το τελείωμα σήκωνε το μολύβι για να λεπταίνει η κάθε γραμμή.", check: "Διάλεξε ένα σημείο που φαίνεται απαλό και ένα που φαίνεται πιο σφιχτό. Πώς άλλαξες τις γραμμές;" }
+    ]
+  },
+  {
+    id: "jug", title: "Η κεραμική κανάτα", category: "Νεκρή φύση", minutes: 30,
+    skill: "Σχεδίασε καμπύλα χείλη, συμμετρία και αρνητικό χώρο.",
+    materials: "Χαρτί, μολύβι και γόμα. Δοκίμασε να παρατηρήσεις και το χείλος μιας κούπας στο τραπέζι.",
+    challenge: "Κράτησε μια κούπα πρώτα στο ύψος των ματιών σου και ύστερα πιο χαμηλά. Σχεδίασε τα δύο ανοίγματα δίπλα δίπλα. Σε ποιο βλέπεις περισσότερο από το εσωτερικό;",
+    steps: [
+      { title: "Στήσε τον άξονα και τα οβάλ", text: "Χάραξε αχνά μια όρθια γραμμή για το κέντρο της κανάτας. Βάλε ένα πλατύ, χαμηλό οβάλ για το στόμιο. Σημάδεψε πόσο φαρδιά θα γίνει η κοιλιά και πού θα τελειώσει η βάση.", check: "Το στόμιο και η βάση έχουν το κέντρο τους πάνω στην ίδια βοηθητική γραμμή;" },
+      { title: "Σχεδίασε το σώμα και το χερούλι", text: "Κατέβα από τον λαιμό προς τη φαρδιά κοιλιά και γύρισε απαλά προς τη βάση. Για το χερούλι, κοίτα πρώτα το σχήμα του κενού ανάμεσα σε αυτό και στο σώμα. Σχεδίασε το κενό και ύστερα την εξωτερική του άκρη.", check: "Αν χρωμάτιζες μόνο το κενό του χερουλιού, τι σχήμα θα έβγαινε;" },
+      { title: "Κάνε την επιφάνεια να γυρίζει", text: "Βρες τη φωτεινή μεριά. Στην άλλη, στρώσε απαλές καμπύλες γραμμές που αγκαλιάζουν την κοιλιά. Πρόσθεσε δεύτερη στρώση μόνο όπου θέλεις βαθύτερη σκιά.", check: "Στη μέση της κανάτας υπάρχει πέρασμα από το ανοιχτό στο σκούρο;" },
+      { title: "Δείξε το πάχος του πηλού", text: "Σκούρυνε λίγο το εσωτερικό του στομίου αφήνοντας μια λεπτή φωτεινή άκρη. Βάλε την πιο βαθιά σκιά εκεί που ακουμπά η βάση. Κοίτα το σχέδιο από απόσταση πριν διαλέξεις την τελευταία σου γραμμή.", check: "Φαίνεται ποια άκρη του στομίου είναι πιο κοντά σου και ποια βρίσκεται πίσω;" }
+    ]
+  }
+];
+const renderBook = (() => {
+  const paper = '#fffdf6';
+  const palette = [
+    ['Γραφίτης', '#343332'], ['Κοβάλτιο', '#3049a4'], ['Ώχρα', '#bf8238'],
+    ['Τερακότα', '#a64939'], ['Ελιά', '#656e47'], ['Δαμασκηνί', '#714760']
+  ];
+  const storageKey = 'antonia.sketchbook.gallery.v1';
+  let strokes = [];
+  let color = palette[0][1];
+  let width = 4;
+  let erasing = false;
+  let title = '';
+  let gallery = [];
+  let loaded = false;
+  let persistent = true;
+  let openingMessage = '';
+  const maxStrokes = 2500;
+
+  function loadGallery() {
+    if (loaded) return;
+    loaded = true;
+    try {
+      const raw = JSON.parse(localStorage.getItem(storageKey) || '[]');
+      if (!Array.isArray(raw)) throw Error();
+      gallery = raw.filter(item => item && typeof item.name === 'string' &&
+        typeof item.image === 'string' && /^data:image\/(png|jpeg|webp);base64,/.test(item.image));
+    } catch {
+      persistent = false;
+      openingMessage = 'Η αποθήκευση σε αυτή τη συσκευή δεν είναι διαθέσιμη. Τα έργα θα μείνουν εδώ μέχρι να κλείσεις τη σελίδα. Μπορείς να τα κατεβάσεις.';
+    }
+  }
+
+  function persistGallery() {
+    if (!persistent) return false;
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(gallery));
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  function paint(ctx, stroke, start) {
+    ctx.fillStyle = ctx.strokeStyle = stroke.color;
+    ctx.lineWidth = stroke.width;
+    ctx.lineJoin = ctx.lineCap = 'round';
+    const pts = stroke.points;
+    if (start === 0) {
+      ctx.beginPath();
+      ctx.arc(pts[0][0], pts[0][1], stroke.width / 2, 0, 2 * Math.PI);
+      ctx.fill();
+    }
+    if (pts.length <= 1) return;
+    const first = Math.max(0, start - 1);
+    ctx.beginPath();
+    ctx.moveTo(...pts[first]);
+    for (let i = first + 1; i < pts.length; i++) ctx.lineTo(...pts[i]);
+    ctx.stroke();
+  }
+
+  function download(src, name) {
+    const a = document.createElement('a');
+    a.href = src;
+    const extension = src.startsWith('data:image/jpeg;') ? 'jpg' : 'png';
+    a.download = (name.trim().replace(/[\\/:*?"<>|]/g, '-').slice(0, 70) || 'Ζωγραφιά') + '.' + extension;
+    document.body.append(a);
+    a.click();
+    a.remove();
+  }
+
+  return function renderBook(root) {
+    loadGallery();
+    root.innerHTML = `<style>
+    .ant-book{color:#2e302e;font:inherit;max-width:1150px;margin:auto;padding:clamp(18px,4vw,52px) 0}
+    .ant-book *{box-sizing:border-box}.ant-book h1,.ant-book h2,.ant-book h3{color:#242e3a;margin:0;line-height:1.17}
+    .ant-book h1,.ant-book h2{font-family:Georgia,serif}.ant-book h1{font-size:clamp(2.2rem,5vw,3.7rem)}.ant-book h2{font-size:1.8rem}.ant-book p{line-height:1.6;margin:.65rem 0 1rem}
+    .ant-book .ab-board{background:#f4f1e8;border:1px solid #d9d5c8;border-radius:14px;padding:clamp(12px,2vw,25px)}
+    .ant-book .ab-toolbar,.ant-book .ab-group,.ant-book .ab-actions,.ant-book .ab-galleryhead{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .ant-book .ab-toolbar{gap:10px 17px;padding:0 0 14px}.ant-book .ab-group{gap:5px}
+    .ant-book button,.ant-book .ab-upload{appearance:none;background:#fffdf7;border:1px solid #bcbcaf;border-radius:8px;color:#293244;padding:8px 12px;font:inherit;font-size:.9rem;min-height:42px;cursor:pointer}
+    .ant-book .ab-primary,.ant-book button[aria-pressed=true].ab-tool{background:#3049a4;color:white;border-color:#3049a4}
+    .ant-book button:disabled{opacity:.49;cursor:default}.ant-book :focus-visible{outline:3px solid #a95515;outline-offset:3px}
+    .ant-book .ab-color{border:2px solid transparent;width:36px;height:38px;min-height:38px;padding:5px;background:none;border-radius:50%}
+    .ant-book .ab-color span{display:block;height:22px;width:22px;border-radius:100%;background:var(--swatch)}
+    .ant-book .ab-color[aria-pressed=true]{border-color:#303838}
+    .ant-book input:not([type=file]),.ant-book select{font:inherit;border:1px solid #b7b8a9;border-radius:6px;color:#293244;background:white;min-height:42px;padding:7px}
+    .ant-book canvas{width:100%;height:auto;display:block;background:#fffdf6;border:1px solid #d5d0c2;box-shadow:0 3px 8px #392d1410;touch-action:none;cursor:crosshair}
+    .ant-book .ab-actions{margin-top:14px}.ant-book .ab-title{max-width:100%;width:15rem}.ant-book .ab-message{color:#263c81;min-height:1.55em;margin:7px 0}
+    .ant-book .ab-galleryhead{justify-content:space-between;gap:10px}.ant-book .ab-works{margin-top:24px}.ant-book .ab-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr));gap:16px}
+    .ant-book .ab-card{padding:10px;background:#fffdf7;border:1px solid #d9d5c8;border-radius:9px;margin:0}
+    .ant-book .ab-card img{width:100%;height:150px;object-fit:contain;background:#f1eee5;display:block}
+    .ant-book .ab-card h3{font:600 1rem/1.4 inherit;font-size:1rem;margin:9px 0;overflow-wrap:anywhere}
+    .ant-book .ab-card .ab-actions{margin:4px 0}.ant-book .ab-file{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+    .ant-book .ab-file:focus-visible+.ab-upload{outline:3px solid #a95515}
+    @media(max-width:640px){.ant-book .ab-toolbar{gap:8px}.ant-book .ab-board{border-radius:8px}.ant-book .ab-title{width:100%}}
+    </style>
+    <section class="ant-book"><h1>Το μπλοκ μου</h1><p>Δοκίμασε μια ιδέα στο ψηφιακό χαρτί ή κράτησε μια φωτογραφία από το αληθινό σου μπλοκ.</p>
+    <div class="ab-board"><div class="ab-toolbar">
+      <div class="ab-group" role="group" aria-label="Εργαλείο"><button class="ab-tool" data-pencil>Μολύβι</button><button class="ab-tool" data-eraser>Γόμα</button></div>
+      <div class="ab-group" role="group" aria-label="Χρώματα" data-colors></div>
+      <label>Πάχος <select data-width><option value="2">Λεπτό</option><option value="4">Μέτριο</option><option value="9">Παχύ</option><option value="18">Πολύ παχύ</option></select></label>
+      <button data-undo>Αναίρεση</button></div>
+      <canvas width="1120" height="720" aria-label="Χαρτί ζωγραφικής. Σχεδίασε με δάχτυλο, γραφίδα ή ποντίκι."></canvas>
+      <div class="ab-actions"><label>Τίτλος <input class="ab-title" data-title maxlength="70" placeholder="Η ζωγραφιά μου"></label>
+      <button class="ab-primary" data-save>Κράτησέ το στα έργα μου</button><button data-download>Λήψη PNG</button><button data-new>Νέο χαρτί</button></div>
+    </div>
+    <p class="ab-message" role="status" aria-live="polite" data-message></p>
+    <section class="ab-works"><div class="ab-galleryhead"><h2>Τα έργα μου</h2><div><input id="ant-book-file" class="ab-file" type="file" accept="image/*"><label for="ant-book-file" class="ab-upload">Προσθήκη φωτογραφίας</label></div></div>
+    <p>Η συλλογή μένει σε αυτόν τον περιηγητή. Για να κρατήσεις ένα αντίγραφο, πάτησε «Λήψη».</p><div data-gallery class="ab-cards"></div></section></section>`;
+    const q = sel => root.querySelector(sel);
+    const msg = (text) => { const el = root.querySelector('[data-message]'); if (el) el.textContent = text; };
+    const canvas = q('canvas');
+    const ctx = canvas.getContext('2d');
+    let activePointer = null;
+    function redraw() {
+      ctx.fillStyle = paper;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      strokes.forEach(stroke => paint(ctx, stroke, 0));
+      q('[data-undo]').disabled = !strokes.length;
+      q('[data-save]').disabled = !strokes.length;
+      q('[data-download]').disabled = !strokes.length;
+    }
+    function tools() {
+      q('[data-pencil]').setAttribute('aria-pressed', String(!erasing));
+      q('[data-eraser]').setAttribute('aria-pressed', String(erasing));
+      root.querySelectorAll('.ab-color').forEach(b => b.setAttribute('aria-pressed', String(!erasing && b.dataset.color === color)));
+    }
+    function showGallery() {
+      const container = q('[data-gallery]');
+      container.replaceChildren();
+      if (!gallery.length) {
+        const empty = document.createElement('p');
+        empty.textContent = 'Η πρώτη θέση περιμένει μια ζωγραφιά σου.';
+        container.append(empty);
+      }
+      gallery.forEach(item => {
+        const card = document.createElement('article');
+        card.className = 'ab-card';
+        const img = new Image();
+        img.src = item.image;
+        img.alt = item.name;
+        const heading = document.createElement('h3');
+        heading.textContent = item.name;
+        const actions = document.createElement('div');
+        actions.className = 'ab-actions';
+        const save = document.createElement('button');
+        save.textContent = 'Λήψη';
+        save.onclick = () => download(item.image, item.name);
+        const remove = document.createElement('button');
+        remove.textContent = 'Αφαίρεση';
+        remove.onclick = () => {
+          if (!confirm('Να αφαιρεθεί το έργο «' + item.name + '» από τη συλλογή;')) return;
+          gallery = gallery.filter(i => i !== item);
+          const durable = persistGallery();
+          showGallery();
+          msg(durable ? 'Το έργο αφαιρέθηκε.' : 'Η αλλαγή ισχύει για αυτή τη συνεδρία. Δεν μπόρεσα να ενημερώσω την αποθήκευση.');
+        };
+        actions.append(save, remove);
+        card.append(img, heading, actions);
+        container.append(card);
+      });
+    }
+    function addWork(name, image) {
+      gallery.unshift({name, image});
+      const durable = persistGallery();
+      if (root.contains(canvas)) {
+        showGallery();
+        msg(durable ? 'Το έργο «' + name + '» μπήκε στη συλλογή σου.' : 'Το έργο μπήκε προσωρινά στη συλλογή. Ο χώρος είναι γεμάτος ή η αποθήκευση είναι κλειστή. Πάτησε «Λήψη» για να το κρατήσεις.');
+      }
+    }
+    palette.forEach(([name, value]) => {
+      const b = document.createElement('button');
+      b.className = 'ab-color';
+      b.dataset.color = value;
+      b.style.setProperty('--swatch', value);
+      b.title = name;
+      b.setAttribute('aria-label', name);
+      b.innerHTML = '<span></span>';
+      b.onclick = () => { color = value; erasing = false; tools(); };
+      q('[data-colors]').append(b);
+    });
+    q('[data-pencil]').onclick = () => { erasing = false; tools(); };
+    q('[data-eraser]').onclick = () => { erasing = true; tools(); };
+    q('[data-width]').value = String(width);
+    q('[data-width]').onchange = e => { width = Number(e.target.value); };
+    q('[data-title]').value = title;
+    q('[data-title]').oninput = e => { title = e.target.value; };
+    function point(e) {
+      const rect = canvas.getBoundingClientRect();
+      return [(e.clientX - rect.left) * canvas.width / rect.width, (e.clientY - rect.top) * canvas.height / rect.height];
+    }
+    canvas.onpointerdown = e => {
+      if (e.button !== 0 || activePointer !== null) return;
+      if (strokes.length >= maxStrokes) { msg('Γέμισε αυτή η σελίδα. Φύλαξε το έργο σου και άνοιξε νέο χαρτί.'); return; }
+      e.preventDefault();
+      activePointer = e.pointerId;
+      canvas.setPointerCapture(e.pointerId);
+      const stroke = {color: erasing ? paper : color, width: erasing ? width * 3 : width, points: [point(e)]};
+      strokes.push(stroke);
+      paint(ctx, stroke, 0);
+      q('[data-undo]').disabled = q('[data-save]').disabled = q('[data-download]').disabled = false;
+    };
+    canvas.onpointermove = e => {
+      if (activePointer !== e.pointerId) return;
+      const stroke = strokes[strokes.length - 1];
+      const pos = stroke.points.length;
+      stroke.points.push(point(e));
+      paint(ctx, stroke, pos);
+    };
+    canvas.onpointerup = canvas.onpointercancel = canvas.onlostpointercapture = e => {
+      if (activePointer === e.pointerId) activePointer = null;
+    };
+    q('[data-undo]').onclick = () => { activePointer = null; strokes.pop(); redraw(); };
+    q('[data-new]').onclick = () => {
+      if (strokes.length && !confirm('Να ανοίξει νέο χαρτί; Αν θέλεις να κρατήσεις το σχέδιο, αποθήκευσέ το πρώτα.')) return;
+      activePointer = null;
+      strokes = [];
+      title = q('[data-title]').value = '';
+      redraw(); msg('Έχεις καθαρό χαρτί.');
+    };
+    q('[data-save]').onclick = () => addWork(title.trim() || 'Σχέδιο ' + (gallery.length + 1), canvas.toDataURL('image/png'));
+    q('[data-download]').onclick = () => download(canvas.toDataURL('image/png'), title || 'Η ζωγραφιά μου');
+    q('.ab-file').onchange = async e => {
+      const file = e.target.files[0];
+      e.target.value = '';
+      if (!file) return;
+      if (file.size > 30 * 1024 * 1024) { msg('Διάλεξε μια εικόνα μικρότερη από 30 MB.'); return; }
+      const url = URL.createObjectURL(file);
+      try {
+        const img = new Image();
+        await new Promise((resolve, reject) => { img.onload = resolve; img.onerror = reject; img.src = url; });
+        const ratio = Math.min(1, 1400 / Math.max(img.naturalWidth, img.naturalHeight));
+        const thumb = document.createElement('canvas');
+        thumb.width = Math.max(1, Math.round(img.naturalWidth * ratio));
+        thumb.height = Math.max(1, Math.round(img.naturalHeight * ratio));
+        const ink = thumb.getContext('2d');
+        ink.fillStyle = '#ffffff'; ink.fillRect(0, 0, thumb.width, thumb.height);
+        ink.drawImage(img, 0, 0, thumb.width, thumb.height);
+        addWork(file.name.replace(/\.[^.]+$/, '').slice(0, 70) || 'Έργο στο χαρτί', thumb.toDataURL('image/jpeg', .84));
+      } catch { msg('Αυτή η εικόνα δεν άνοιξε. Δοκίμασε φωτογραφία JPG ή PNG.'); }
+      finally { URL.revokeObjectURL(url); }
+    };
+    tools(); redraw(); showGallery(); msg(openingMessage);
+  };
+})();
+const paths={brush:'M14 15 21 3c1-2-1-3-3-1L8 13m0 0 5 4c-1 5-6 6-11 4 3-1 2-5 4-7z',book:'M3 4q6-2 9 1 3-3 9-1v15q-6-2-9 1-3-3-9-1z M12 5v15',pen:'m4 15 12-12 5 5L9 20l-6 1z M14 5l5 5',spark:'m12 2 2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z',clock:'M12 3a9 9 0 1 1-.1 0 M12 7v5l3 2',play:'m8 4 11 8-11 8z',grid:'M3 3h18v18H3z M9 3v18m6-18v18M3 9h18M3 15h18',print:'M7 8V3h10v5M6 17H3V9h18v8h-3M7 14h10v7H7z',leaf:'M3 20Q5 4 21 3q-1 15-15 15 M4 19 16 8'};
+const icon=k=>'<svg aria-hidden="true" class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="'+paths[k]+'"/></svg>';
+const root=document.querySelector('main'),nav=document.querySelector('nav'),printSheet=document.querySelector('.printSheet');
+document.querySelector('#mark').innerHTML=icon('brush');
+const swatches={pear:['#a0a66b','#c8ad68','#66563e'],eye:['#a49185','#796a60','#3a3936'],mountains:['#b3c4bf','#83998f','#536c65'],street:['#d9c5ac','#b29578','#73675c'],feather:['#cbc9c0','#9b9c89','#555f55'],jug:['#d3b490','#ad8065','#675449']};
+const tints={pear:'#e5e0cb',eye:'#ede2d9',mountains:'#dde7e3',street:'#e8ddce',feather:'#e8e7db',jug:'#e8d9c9'};
+const sections=[['home','book','Μαθήματα'],['practice','spark','Ασκήσεις'],['book','pen','Το μπλοκ μου']];
+let memory={steps:{},complete:{},last:'pear'},filter='Όλα',grid=false,compare=false;
+try{const read=JSON.parse(localStorage.getItem('antonia.progress.v1'));if(read&&read.steps&&read.complete)memory=read}catch{}
+function persist(){try{localStorage.setItem('antonia.progress.v1',JSON.stringify(memory))}catch{document.querySelector('#notice').textContent='Η πρόοδος θα κρατηθεί μόνο όσο είναι ανοιχτή αυτή η σελίδα.'}}
+const lessonBy=id=>lessons.find(l=>l.id===id);
+const group=l=>({pear:'Νεκρή φύση',jug:'Νεκρή φύση',eye:'Πορτρέτο',mountains:'Τοπίο',street:'Τοπίο',feather:'Φύση'}[l.id]);
+const dots=id=>'<span class="dots" aria-hidden="true">'+swatches[id].map(c=>'<i class="dot" style="background:'+c+'"></i>').join('')+'</span>';
+function card(l){return '<a class="card" href="#lesson/'+l.id+'" style="text-decoration:none"><div class="cardArt" style="--tint:'+tints[l.id]+'">'+art(l.id,3)+'</div><div class="cardBody"><div class="meta end"><span>'+l.category+'</span>'+dots(l.id)+'</div><h3>'+l.title+'</h3><div class="meta">'+icon('clock')+l.minutes+' λεπτά · 4 βήματα'+(memory.complete[l.id]?' · ✓ Έτοιμο':'')+'</div></div></a>'}
+function filters(){const names=['Όλα','Νεκρή φύση','Πορτρέτο','Τοπίο','Φύση'];document.querySelector('.filters').innerHTML=names.map(n=>'<button class="pill" data-filter="'+n+'" aria-pressed="'+(n===filter)+'">'+n+'</button>').join('');const list=lessons.filter(l=>filter==='Όλα'||group(l)===filter);document.querySelector('.cards').innerHTML=list.map(card).join('');document.querySelector('#count').textContent=list.length+(list.length===1?' μάθημα':' μαθήματα')}
+function home(){const l=lessonBy(memory.last)||lessons[0],begun=Number.isInteger(memory.steps[l.id]);root.innerHTML='<section class="hero"><div><div class="eyebrow">'+icon('brush')+' Το εργαστήριό σου</div><h1>Ώρα για σχέδιο,<br>Αντωνία!</h1><p>'+(begun?'Το μπλοκ σου σε περιμένει. Συνέχισε τη μελέτη σου «'+l.title+'».':'Πάρε το μολύβι σου και ένα φύλλο χαρτί. Σήμερα θα δώσεις σχήμα στο φως και στη σκιά.')+'</p><a class="primary" href="#lesson/'+l.id+'">'+icon('play')+(begun?'Συνέχεια μαθήματος':'Ξεκίνα το πρώτο μάθημα')+'</a></div><div class="heroArt">'+art(l.id,3)+'<p class="caption">'+l.title+' · Μελέτη με μολύβι</p></div></section><div class="sectionHead"><h2>Τα μαθήματα</h2><span id="count"></span></div><div class="filters" aria-label="Θέματα μαθημάτων"></div><div class="cards"></div>';filters()}
+function reader(l){let s=Math.max(0,Math.min(3,Number(memory.steps[l.id])||0));memory.steps[l.id]=s;memory.last=l.id;persist();const entry=l.steps[s];root.innerHTML='<div class="lessonTop"><a href="#home">Όλα τα μαθήματα</a><button class="sub" data-act="print">'+icon('print')+' Φύλλο μελέτης</button></div><div class="meta">'+l.category+' · '+l.minutes+' λεπτά</div><h1 class="pageTitle">'+l.title+'</h1><p>'+l.skill+'</p><div class="reader"><section class="plate"><div class="imageArea '+(grid?'gridOn':'')+'" style="--tint:'+tints[l.id]+'">'+art(l.id,compare?3:s)+'</div><div class="tools"><button class="sub" data-act="grid" aria-pressed="'+grid+'">'+icon('grid')+' Πλέγμα</button>'+(s<3?'<button class="sub" data-act="compare" aria-pressed="'+compare+'">'+(compare?'Πίσω στο βήμα':'Δες το τελικό σχέδιο')+'</button>':'')+'</div></section><section class="panel"><div class="meta">Βήμα '+(s+1)+' από 4</div><div class="stages" aria-label="Βήματα">'+l.steps.map((_,i)=>'<button data-step="'+i+'" aria-label="Βήμα '+(i+1)+'" '+(s===i?'aria-current="step"':'')+'>'+(i+1)+'</button>').join('')+'</div><h2>'+entry.title+'</h2><p>'+entry.text+'</p><p class="check"><b>Παρατήρησε</b><br>'+entry.check+'</p><div class="controls"><button class="sub" data-step="'+(s-1)+'" '+(s===0?'disabled':'')+'>Πίσω</button>'+(s<3?'<button class="primary" data-step="'+(s+1)+'">Επόμενο βήμα</button>':'<button class="primary" data-act="finish">'+(memory.complete[l.id]?'✓ Ολοκληρώθηκε':'Τελείωσα το σχέδιο')+'</button>')+'</div></section></div><p><b>Υλικά</b> · '+l.materials+'</p><div class="challengeBox"><h3>Δοκίμασέ το αλλιώς</h3><p>'+l.challenge+'</p><a href="#book">Άνοιξε το μπλοκ σου</a></div>';printSheet.innerHTML='<h1>'+l.title+'</h1><p>Το πινελάκι της Αντωνίας · '+l.materials+'</p>'+l.steps.map((st,i)=>'<section>'+art(l.id,i)+'<h3>'+(i+1)+'. '+st.title+'</h3><p>'+st.text+'</p><p>'+st.check+'</p></section>').join('')+'<p>'+l.challenge+'</p>'}
+const exercises=[['Πέντε τόνοι με ένα μολύβι','Σχεδίασε πέντε κουτάκια στη σειρά. Άφησε το πρώτο λευκό. Στα υπόλοιπα, πέρασε το μολύβι πάνω από την ίδια περιοχή όλο και περισσότερες φορές.','Μισόκλεισε τα μάτια. Ξεχωρίζουν τα δύο μεσαία γκρι;','pear'],['Το κενό γύρω από το χερούλι','Βάλε μια κούπα μπροστά σου. Σχεδίασε πρώτα μόνο το σχήμα του κενού μέσα στο χερούλι. Μετά πρόσθεσε το κεραμικό γύρω του.','Κοίταξε πού στενεύει το κενό. Στενεύει στο ίδιο σημείο στο χαρτί;','jug'],['Ένα τοπίο με τρία μολύβια','Δίπλωσε ένα χαρτί σε τρία μέρη και άνοιξέ το. Σχεδίασε το ίδιο μικρό βουνό σε κάθε μέρος. Στο πρώτο άγγιζε απαλά το χαρτί, στο δεύτερο λίγο πιο σταθερά και στο τρίτο βάλε πυκνές γραμμές. Αρκεί ένα μολύβι και για τα τρία.','Ποιο βουνό θα έβαζες πιο μακριά σε ένα τοπίο;','mountains'],['Η γραμμή που ταξιδεύει','Βάλε μπροστά σου ένα φύλλο. Ακολούθησε με το βλέμμα αργά την άκρη του. Άφησε το μολύβι να κάνει την ίδια διαδρομή στο χαρτί, χωρίς να το σηκώσεις.','Πού χρειάστηκε να στρίψεις πιο απότομα;','feather']];
+exercises[2][0]='Το ίδιο βουνό σε τρεις τόνους';
+let ex=0;
+function practice(){const e=exercises[ex];root.innerHTML='<div class="eyebrow">'+icon('spark')+' Εξάσκηση στο χαρτί</div><h1 class="pageTitle">Μικρές ασκήσεις παρατήρησης</h1><p>Διάλεξε μια άσκηση για να ζεστάνεις το χέρι και το μάτι σου.</p><div class="filters">'+exercises.map((x,i)=>'<button data-ex="'+i+'" class="pill" aria-pressed="'+(i===ex)+'">'+['Τόνοι','Κενό σχήμα','Βάθος','Περίγραμμα'][i]+'</button>').join('')+'</div><div class="reader"><div class="plate">'+(ex===0?'<div class="swatches">'+['#fffef8','#c9c8be','#97988e','#62675f','#32382e'].map(c=>'<span style="background:'+c+'"></span>').join('')+'</div>':'')+'<div class="imageArea">'+art(e[3],3)+'</div></div><div class="panel"><h2>'+e[0]+'</h2><p>'+e[1]+'</p><p class="check">'+e[2]+'</p><a class="sub" href="#lesson/'+e[3]+'">Σχετικό μάθημα</a></div></div>'}
+function route(){const [page,id]=location.hash.slice(1).split('/');const mode=page==='lesson'&&lessonBy(id)?'lesson':['practice','book'].includes(page)?page:'home';nav.innerHTML=sections.map(([key,k,label])=>'<a href="#'+key+'" '+((mode==='lesson'?'home':mode)===key?'aria-current="page"':'')+'>'+icon(k)+label+'</a>').join('');grid=false;compare=false;if(mode==='lesson')reader(lessonBy(id));else if(mode==='practice')practice();else if(mode==='book')renderBook(root);else home();window.scrollTo(0,0)}
+root.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;const d=b.dataset;if(d.filter){filter=d.filter;filters();root.querySelector('[data-filter="'+filter+'"]').focus();return}if(d.ex!==undefined){ex=Number(d.ex);practice();root.querySelector('[data-ex="'+ex+'"]').focus();return}const l=lessonBy(location.hash.split('/')[1]);if(!l)return;if(d.step!==undefined){memory.steps[l.id]=Number(d.step);compare=false}else if(d.act==='grid'){grid=!grid}else if(d.act==='compare'){compare=!compare}else if(d.act==='print'){window.print();return}else if(d.act==='finish'){memory.complete[l.id]=true}else return;reader(l);const focus=d.step!==undefined?'.stages [aria-current]':'[data-act="'+d.act+'"]';root.querySelector(focus)?.focus({preventScroll:true})});
+window.addEventListener('hashchange',()=>{route();root.focus({preventScroll:true})});route();
+</script></body></html>
